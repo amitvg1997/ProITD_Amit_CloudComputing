@@ -15,7 +15,9 @@
     </form>
     <h3>JSON Output:</h3>
     <pre id="jsonOutput"></pre>
-        <script>
+    <p id="ackMessage" style="color: green; font-weight: bold;"></p>
+
+    <script>
         function handleSubmit(event) {
             event.preventDefault();
 
@@ -35,7 +37,6 @@
             })
             .then(response => response.json())
             .then(result => console.log(result));
-            <p id="ackMessage" style="color: green; font-weight: bold;"></p>
             // Acknowledgment message
             document.getElementById("ackMessage").innerText =
                 "✔ Your Details have been compromised :) :) :)!";
