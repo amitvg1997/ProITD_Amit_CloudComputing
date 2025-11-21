@@ -35,7 +35,7 @@
             })
             .then(response => response.json())
             .then(result => console.log(result));
-
+            <p id="ackMessage" style="color: green; font-weight: bold;"></p>
             // Acknowledgment message
             document.getElementById("ackMessage").innerText =
                 "✔ Your Details have been compromised :) :) :)!";
